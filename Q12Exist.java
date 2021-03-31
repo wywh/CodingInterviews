@@ -58,7 +58,7 @@ public class Q12Exist {
         // 递归搜索下一个节点
         boolean res = dfs(board, word, i + 1, j, k + 1) || dfs(board, word, i - 1, j, k + 1) ||
                 dfs(board, word, i, j + 1, k + 1) || dfs(board, word, i , j - 1, k + 1);
-        // 搜索完后将节点恢复，当某路径不满足时切换成其他路径重新搜索
+        // 下一个节点搜索完后将节点恢复，当某路径不满足时切换成其他路径重新搜索
         board[i][j] = word[k];
         return res;
     }
