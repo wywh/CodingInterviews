@@ -8,8 +8,7 @@
  * 输入: 2
  * 输出: 1
  * 解释: 2 = 1 + 1, 1 × 1 = 1
-
-
+ *
  * 示例2:
  * 输入: 10
  * 输出: 36
@@ -40,11 +39,6 @@ public class Q14ICuttingRope {
     //贪心算法
     // 尽可能将绳子分成长度为 3 的小段时，乘积最大。
 
-    /**
-     *
-     *
-     *
-     */
     public int cuttingRope1(int n) {
         System.out.println(n);
         if(n < 4){
